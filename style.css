@@ -1,0 +1,62 @@
+body {
+    margin: 70px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.container div {
+    position: relative;
+    margin-right: 20px;
+    border-radius: 50px;
+    height: 550px;
+    cursor: pointer;
+    width: 8%;
+    transition: all 0.8s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container div p {
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    visibility: hidden;
+    transition-delay: 0.7s;
+}
+
+
+.container div:first-of-type {
+    background-image: url('img/01.jpg');
+}
+
+.container div:nth-of-type(2) {
+    background-image: url('img/02.jpg');
+}
+
+.container div:nth-of-type(3) {
+    background-image: url('img/03.jpg');
+}
+
+.container div:nth-of-type(4) {
+    background-image: url('img/04.jpg');
+}
+
+.container div:last-of-type {
+    background-image: url('img/05.jpg');
+}
+
+.active {
+    width: 60%!important;
+}
+
+.visible {
+    visibility: visible!important;
+}
